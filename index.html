@@ -1,0 +1,148 @@
+<!-- 
+
+Hello Camper!
+
+Please read the README below in the JS Editor before beginning. Feel free to delete this message once you have read it. Good luck and Happy Coding! 
+
+- The freeCodeCamp Team 
+
+-->
+<!doctype html>
+<html>
+    <head>
+        <title>docummentation page</title>
+        <link rel="stylesheet"href="index.css">
+    </head>
+   <body>
+     <nav id="navbar">
+       <header>learning-matlab</header>
+       <ul type="none">
+         <li><hr><a class="nav-link"href="#introduction"><b>Introduction</b></a></li><hr>
+         <li><a class="nav-link" href="#vector_and_matrix"><b>Vector_and_matrix</b></a></li><hr>
+         <li><a class="nav-link" href="#if_else"><b>If_else</b></a></li><hr>
+         <li><a class="nav-link" href="#function"><b>Function</b></a></li><hr>
+         <li><a class="nav-link" href="#for_while"><b>For_while</b></a></li><hr>
+         <li><a class="nav-link" href="#structure"><b>Structure</b></a></li><hr>
+         <li><a class="nav-link" href="#reference"><b>Reference</b></a></li><hr>
+       </ul>
+     </nav>
+      <main id="main-doc">
+        <section class="main-section"id="introduction">
+          <header>introduction</header>
+          <article>
+            <p>MATLAB is a proprietary multi-paradigm programming language and numeric computing environment developed by MathWorks. MATLAB allows matrix manipulations, plotting of functions and data, implementation of algorithms, creation of user interfaces, and interfacing with programs written in other languages</p>
+            <p>MATLAB features a family of application-specific solutions called toolboxes. Very important to most users of MATLAB, toolboxes allow you to learn and apply specialized technology. Toolboxes are comprehensive collections of MATLAB functions (M-files) that extend the MATLAB environment to solve particular classes of problems. Areas in which toolboxes are available include signal processing, control systems, neural networks, fuzzy logic, wavelets, simulation, and many others.</p>
+            </article>
+        </section>
+        <section class="main-section" id="vector_and_matrix">
+          <header>vector_and_matrix</header>
+          <article>
+            <p>Vectors and matrices are used to store sets of values. The values should of same type (e.g. numerical values). A vector can be either a row vector or a column vector. If a vector has n elements, a row vector would have the dimensions 1\ x\ n1 x n, and a column vector would have the dimensions n\ x\ 1n x 1. A scalar (one value) has the dimensions 1 × 1.</p>
+            <p>look at the simple multiplication of two vector</p>
+        <code>
+            <div  id="code">
+            clc;
+          clear;</br>
+            a=[1 2 3];</br>
+          b=[4 6 7];</br>
+        prod=a*b;</br></div>
+            </code>
+            <p>now,look the multiplication of two matrix</p>
+            <code>
+                <div id="code">
+                clc;</br>
+               clear;</br>
+               a=[1 2 3;5 6 7 ;6 7  89];</br>
+               b=[4 6 7;3 4 5 ;6 7  8];</br>
+               prod=a*b;</br></div>
+            </code>
+           <p>
+A matrix can be visualized as a table of values. The dimensions of a matrix are r × c, where r is the number of rows and c is the number of columns. This is pronounced “r by c.” Therefore, vectors and scalars are actually just subsets of matrices.</p>
+           </article>
+        </section>
+        <section class="main-section"id="if_else">
+          <header>if_else</header>
+          <article>
+            <p>An if statement can be followed by one (or more) optional elseif... and an else statement, which is very useful to test various conditions.</p>
+           <p>
+When using if... elseif...else statements, there are few points to keep in mind
+             <ul>
+               <li>syntax</li>
+               <li>logic</li>
+               <li>docummentation</li>
+               </ul>
+            </p>
+            <p>simple syntax of if_else statement</p>
+            <code>
+                <div id="code">
+            </code>
+              clc;</br>
+              clear;<br>
+              a=5;</br>
+          if a==4</br>
+disp('it is equal')</br>
+else</br>
+disp('it is not equal')</br>
+end;</br></div>
+</code>
+          </article>
+        </section>
+        <section class="main-section"id="function">
+          <header>function</header>
+          <article>
+          <p>A function is a group of statements that together perform a task. In MATLAB, functions are defined in separate files. The name of the file and of the function should be the same.
+            <ul>
+              <li>multiline function</li>
+              <li>inline function</li>
+              <li>anynomous function</li>
+              </ul>
+            </p>
+            <p>let us look the simple function syntax</p>
+            <code>
+                <div id="code">
+              function y=sub(x,y)</br>
+            y=x-y</br>
+          end</br></div>
+            </code>
+          </article>
+        </section>
+        <section class="main-section" id="for_while">
+          <header>for_while</header>
+          <article>
+            <p>There may be a situation when you need to execute a block of code several number of times. In general, statements are executed sequentially. The first statement in a function is executed first, followed by the second, and so on.</p>
+            <p>let's understand the simple example of looping</p>
+            <code>
+                <div  id="code">
+               for i=1:1:5</br>
+               disp("printing five time")</br>
+               end</br>
+               i=0;</br>
+               while i<=0</br>
+               i=i+1</br>
+               disp('it is while loop')</br>
+               end</br></div>
+             </code>
+          </article>
+        </section>
+        <section class="main-section" id="structure">
+          <header>structure</header>
+          <article>
+            <p>A structure array is a data type that groups related data using data containers called fields. Each field can contain any type of data. Access data in a field using dot notation of the form structName.fieldName.</p>
+            <p>understand the development of structure</p>
+            <code>
+                <div  id="code">
+              clc;</br>
+            d=struct();</br></div>
+          </code>
+          </article>
+        </section>
+        <section class="main-section" id="reference">
+          <header>reference</header>
+          <article>
+            <p>If you also used the documentation in your paper or research, you can use the documentation webpage (e.g. https://www.mathworks.com/help/matlab/ref/rand.html ) and follow the standard rules for citing a webpage in whatever convention you are using for your sources.
+            </p>
+          </article>
+        </section>
+        </main>
+   </body>
+</html>
